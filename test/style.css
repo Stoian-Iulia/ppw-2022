@@ -1,0 +1,54 @@
+h1 {
+    text-align: center;
+}
+.border {
+
+    width: 150px;
+	min-height: 20px;
+	border: 8px solid;
+	padding: 1rem;
+}
+
+.butterfly-card {
+	border-image: linear-gradient(45deg, #40e0d0, #c97cdc) 1;
+    text-align: center;
+}
+
+.btn{
+    background-color: #c97cdc;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#insertInfoCont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 46%;
+    
+}
+
+.insertInfo {
+    margin-left: 0px;
+    margin-top: 5px;
+}
+
+#displayTemplate {
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+h2 {
+    margin-left: 5%;
+}
+
+#funcContWrapper {
+    margin-top: 5%;
+}

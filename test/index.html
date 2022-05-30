@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Evaluation</title>
+</head>
+
+<body>
+    <div id="mainWrapper">
+        <h1>Evaluation</h1>
+
+        <div id="displayTemplate">
+            <div id="infoPrint">
+                <h2>Butterflies</h2>
+                <div class="butterflies" id="infoCont"></div>
+            </div>
+            <div id="funcContWrapper">
+                <div id="beOrNotToBe"></div>
+                <div id="addNewCreature">
+
+                    <div id="insertInfoCont">
+                        <label class="insertInfo">Insert type: </label>
+                        <input type="text" id="typeInput" placeholder="Type"><br>
+
+                        <label class="insertInfo">Insert color: </label>
+                        <input type="text" id="colorInput" placeholder="Color"><br>
+
+                        <label class="insertInfo">Insert age: </label>
+                        <input type="number" id="ageInput" placeholder="Age"><br>
+
+                        <label class="insertInfo">Insert weight: </label>
+                        <input type="number" id="weightInput" placeholder="Weight"><br>
+
+                    </div>
+                    <button class="btn" onclick="add()">Add new</button><br>
+                </div>
+                <div id="otherFunctions">
+                    <label class="insertInfo">Remove by Id: </label>
+                    <input type="text" id="removeById" placeholder="Insert id"><br>
+                    <button class="btn" onclick="remove()">Remove</button><br>
+
+                    <label for="" id="tAge">Total age is: </label><br>
+                    <button class="btn" onclick="calcAge()">Check</button><input type="text" id="ageResult"
+                        placeholder="Total Age Sum"><br>
+
+                    <label for="" id="">Increase weight by 10% if age is > 5 days </label><br>
+                    <button class="btn" onclick="modifyField()">Check</button><br>
+
+                    <label for="" id="">Find all objects with weight > 0.11 </label><br>
+                    <button class="btn" onclick="findByWeight()">Check</button>
+                    <div id="filteredItems"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="main.js"></script>
+    </div>
+</body>
+
+</html>
